@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सुजल जंग</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+        }
+        nav {
+            background-color: #ffcc00;
+            position: relative;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu-button {
+            background-color: #0000ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .menu a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            text-align: center;
+        }
+        .menu a:last-child {
+            border-bottom: none;
+        }
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #0000ff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>सुजल जंग</h1>
+        <p>सत्य र निष्पक्ष</p>
+    </header>
+    <nav>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <div class="menu">
+            <a href="#news">समाचार</a>
+            <a href="#views">विचार</a>
+            <a href="#interview">अन्तरवार्ता</a>
+            <a href="#economy">अर्थ</a>
+            <a href="#entertainment">मनोरञ्जन</a>
+            <a href="#world">संसार</a>
+            <a href="#sports">खेलकुद</a>
+            <a href="#misc">विविध</a>
+            <a href="#videos">भिडियो</a>
+            <a href="#gallery">ग्यालरी</a>
+            <a href="#audio">अडियो</a>
+        </div>
+    </nav>
+    <div class="content" id="news">
+        <h2>समाचार</h2>
+        <p>यहाँ समाचारहरूको विवरण लेख्न सक्नुहुन्छ।</p>
+    </div>
+    <div class="content" id="views">
+        <h2>विचार</h2>
+        <p>यहाँ विचारहरूको विवरण लेख्न सक्नुहुन्छ।</p>
+    </div>
+    <div class="content" id="interview">
+        <h2>अन्तरवार्ता</h2>
+        <p>यहाँ अन्तरवार्ताहरूको विवरण लेख्न सक्नुहुन्छ।</p>
+    </div>
+    <div class="content" id="economy">
+        <h2>अर्थ</h2>
+        <p>यहाँ अर्थसम्बन्धी विवरण लेख्न सक्नुहुन्छ।</p>
+    </div>
+    <div class="content" id="entertainment">
+        <h2>मनोरञ्जन</h2>
+        <p>यहाँ मनोरञ्जनसम्बन्धी सामग्री राख्न सक्नुहुन्छ।</p>
+    </div>
+    <footer>
+        <p>सम्पर्क: infobikashnepali215@gmail.com | फोन: +9779812810293</p>
+        <p>ठेगाना: घोराही उपमहानगरपालिका १</p>
+    </footer>
+</body>
+</html>
